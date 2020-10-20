@@ -18,7 +18,6 @@ $datadir/bin/ycsb load mongodb -s -P workloads/workloadd -p mongodb.url=mongodb:
 #sleep 10
 $datadir/bin/ycsb run mongodb -s -P workloads/workloadd -p mongodb.url=mongodb://localhost:27017/ycsb?w=0 | grep -v "mongo client" | awk '{print $3}' > MongoDBoutRunD.txt
 
-
 # merge the results file into one csv
 perl loadmerge.pl MongoDBoutLoad* > mongodb_load_results.csv
 perl runmerge.pl MongoDBoutRun* > mongodb_run_results.csv
