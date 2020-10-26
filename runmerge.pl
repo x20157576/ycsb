@@ -4,7 +4,7 @@ use strict;
 
 my @csv=();
 
-print "Result,A,B,C,D\n" ; 
+print "Result,A,B,D\n" ; 
 
 foreach (@ARGV) {
   my $linenum=0;

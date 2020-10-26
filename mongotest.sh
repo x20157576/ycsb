@@ -25,5 +25,5 @@ perl loadmerge.pl MongoDBoutLoad* > mongodb_load_results.csv
 perl runmerge.pl MongoDBoutRun* > mongodb_run_results.csv
 
 #cleanup
-#rm  MongoDBout*
+rm  MongoDBout*
 

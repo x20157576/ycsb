@@ -9,10 +9,10 @@ $datadir/bin/ycsb load redis -s -P workloads/workloadb -p "redis.host=127.0.0.1"
 sleep 5
 $datadir/bin/ycsb load redis -s -P workloads/workloadb -p "redis.host=127.0.0.1" -p "redis.port=6379" | awk '{print $3}' > REDISoutRunB.txt
 sleep 5
-$datadir/bin/ycsb load redis -s -P workloads/workloadc -p "redis.host=127.0.0.1" -p "redis.port=6379" | awk '{print $3}' > REDISoutLoadC.txt
-sleep 5
-$datadir/bin/ycsb load redis -s -P workloads/workloadc -p "redis.host=127.0.0.1" -p "redis.port=6379" | awk '{print $3}' > REDISoutRunC.txt
-sleep 5
+#$datadir/bin/ycsb load redis -s -P workloads/workloadc -p "redis.host=127.0.0.1" -p "redis.port=6379" | awk '{print $3}' > REDISoutLoadC.txt
+#sleep 5
+#$datadir/bin/ycsb load redis -s -P workloads/workloadc -p "redis.host=127.0.0.1" -p "redis.port=6379" | awk '{print $3}' > REDISoutRunC.txt
+#sleep 5
 $datadir/bin/ycsb load redis -s -P workloads/workloadd -p "redis.host=127.0.0.1" -p "redis.port=6379" | awk '{print $3}' > REDISoutLoadD.txt
 sleep 5
 $datadir/bin/ycsb load redis -s -P workloads/workloadd -p "redis.host=127.0.0.1" -p "redis.port=6379" | awk '{print $3}' > REDISoutRunD.txt
