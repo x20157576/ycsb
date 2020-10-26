@@ -20,6 +20,6 @@ foreach (@ARGV) {
 };
 
 foreach (@csv) {
-  s/^,//;   # strip leading comma from line
-  print $_,"\n";
+  	s/^,//;   # strip leading comma from line
+        print $_,"\n";
 };
